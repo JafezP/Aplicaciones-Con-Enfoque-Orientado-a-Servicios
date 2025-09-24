@@ -1,0 +1,81 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.idat.edu.pe/ws/operaciones"
+    targetNamespace="http://www.idat.edu.pe/ws/operaciones"
+    elementFormDefault="qualified">
+
+    <!-- Mensaje de peticion ( SUMA ) -->
+    <xs:element name="getSumaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="num1" type="xs:int" />
+                <xs:element name="num2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Respuesta de la peticion ( SUMA ) -->
+    <xs:element name="getSumaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultado" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Mensaje de peticion ( RESTA ) -->
+    <xs:element name="getRestaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="num1" type="xs:int" />
+                <xs:element name="num2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Respuesta de la peticion ( RESTA ) -->
+    <xs:element name="getRestaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultado" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Mensaje de peticion ( MULTIPLICACION ) -->
+    <xs:element name="getMultiplicacionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="num1" type="xs:int" />
+                <xs:element name="num2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Respuesta de la peticion ( MULTIPLICACION ) -->
+    <xs:element name="getMultiplicacionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultado" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Mensaje de peticion ( DIVISION ) -->
+    <xs:element name="getDivisionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="num1" type="xs:int" />
+                <xs:element name="num2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Respuesta de la peticion ( DIVISION ) -->
+    <xs:element name="getDivisionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultado" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
